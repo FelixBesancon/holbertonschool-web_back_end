@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 """Defines a function that returns the sum of a list of integers and floats."""
 
 
