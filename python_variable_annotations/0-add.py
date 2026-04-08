@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Defines a type-annotated function that adds two integers."""
 
 
