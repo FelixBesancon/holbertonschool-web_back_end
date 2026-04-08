@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Defines a measure_runtime coroutine that executes async_comprehension
+"""
+Defines a measure_runtime coroutine that executes async_comprehension
 four times in parallel using asyncio.gather and returns the total runtime.
 """
 
