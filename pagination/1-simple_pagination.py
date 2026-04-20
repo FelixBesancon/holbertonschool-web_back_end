@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import csv
+import math
 from typing import Tuple, List
 
 
@@ -52,8 +53,8 @@ class Server:
         Returns:
             List[List]: The appropriate page of the dataset.
         """
-        assert type(page) is int and page > 0
-        assert type(page_size) is int and page_size > 0
+        assert isinstance(page, int) and page > 0
+        assert isinstance(page_size, int) and page_size > 0
 
         start, end = index_range(page, page_size)
         dataset = self.dataset()
