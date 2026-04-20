@@ -1,4 +1,13 @@
 #!/usr/bin/env python3
+"""
+Module that defines a Server class to paginate a database
+of popular baby names.
+The Server class includes a method get_page that returns
+the appropriate page of the dataset.
+The module also includes a helper function index_range that returns a tuple
+of size two containing a start index and an end index
+corresponding to the range of indexes to return in a list for pagination.
+"""
 
 import csv
 import math
