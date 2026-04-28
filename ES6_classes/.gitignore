@@ -1,0 +1,31 @@
+# Node modules (TOUJOURS ignorer)
+node_modules/
+
+# Logs npm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Env files
+.env
+
+# Temporary files
+*.tmp
+*.temp
+
+# Build / transpiled files (au cas où plus tard)
+dist/
+build/
+
+# Coverage (tests)
+coverage/
+
+# Cache
+.cache/
+
+# Script d'installation (inutile en repo)
+nodesource_setup.sh
