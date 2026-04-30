@@ -23,14 +23,14 @@ export default class HolbertonClass {
     if (typeof location !== 'string') {
       throw new TypeError('Location must be a string');
     }
-    this._location= location;
+    this._location = location;
   }
 
-  [Symbol.toPrimitive](hint) {
-    if (hint === "number") {
+  [Symbol.toPrimitive] (hint) {
+    if (hint === 'number') {
       return this.size;
     }
-    if (hint ==="string") {
+    if (hint === 'string') {
       return this.location;
     }
   }
