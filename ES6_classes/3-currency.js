@@ -1,32 +1,32 @@
 export default class Currency {
-  constructor(code, name) {
+  constructor (code, name) {
     this.code = code;
     this.name = name;
   }
 
-  get code() {
-   return this._code;
+  get code () {
+    return this._code;
   }
 
-  get name() {
+  get name () {
     return this._name;
   }
 
-  set code(code) {
+  set code (code) {
     if (typeof code !== 'string') {
-      throw new TypeError ('Code must be a string');
+      throw new TypeError('Code must be a string');
     }
     this._code = code;
   }
 
-   set name(name) {
+  set name (name) {
     if (typeof name !== 'string') {
-      throw new TypeError ('Name must be a string');
+      throw new TypeError('Name must be a string');
     }
     this._name = name;
   }
 
-  displayFullCurrency() {
-    return `${this.name} (${this.code})`
+  displayFullCurrency () {
+    return `${this.name} (${this.code})`;
   }
 }
