@@ -14,7 +14,7 @@ export default class StudentsController {
         response.send(result.trimEnd());
       })
       .catch((err) => {
-        response.status(500).send('Cannot load the database');
+        response.status(500).send(err.message);
       });
   }
 
@@ -31,7 +31,7 @@ export default class StudentsController {
         response.send(result.trimEnd());
       })
       .catch((err) => {
-        response.status(500).send('Cannot load the database');
+        response.status(500).send(err.message);
       });
   }
 }
