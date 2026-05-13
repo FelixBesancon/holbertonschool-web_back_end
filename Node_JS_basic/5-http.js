@@ -21,7 +21,7 @@ function countStudents(path) {
           return obj;
         });
 
-      let response =`\nNumber of students: ${students.length}\n`;
+      let response = `\nNumber of students: ${students.length}\n`;
 
       const fields = [...new Set(students.map((student) => student.field))];
 
@@ -50,11 +50,11 @@ const app = http.createServer((req, res) => {
       .then((students) => {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
         res.end(`This is the list of our students${students}`);
-  })
-  .catch((err) => {
-    res.writeHead(500, { 'Content-Type': 'text/plain' });
-    res.end(`This is the list of our students${err.message}`);
-    });
+      })
+      .catch((err) => {
+        res.writeHead(500, { 'Content-Type': 'text/plain' });
+        res.end(`This is the list of our students${err.message}`);
+      });
   }
 });
 
